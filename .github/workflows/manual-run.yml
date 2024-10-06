@@ -1,0 +1,14 @@
+name: manual
+on:
+    workflow_dispatch:  #手動実行イベント
+    inputs:
+      greeting:         #入力パラメータの指定
+        type: string 
+        default Hello
+        required: true
+        description: Acheerful word
+jobs: 
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{inputs.greeting}}"
