@@ -4,7 +4,7 @@ on:
     inputs:
       greeting:         #入力パラメータの指定
         type: string 
-        default Hello
+        default: Hello
         required: true
         description: Acheerful word
 jobs: 
